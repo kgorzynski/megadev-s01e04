@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-10-29
 ---
 
 # Morning digest
@@ -77,3 +78,17 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+| # | Issue | Blocked by | Worker | Closed |
+|---|-------|-----------|--------|--------|
+| [1](https://github.com/kgorzynski/megadev-s01e04/issues/1) | Run log reader | — | claude-code · opus-5.5 · low | 2026-10-29 |
+| [2](https://github.com/kgorzynski/megadev-s01e04/issues/2) | Digest page: GET /digest/:night | #1 | claude-code · opus-5.5 · low | 2026-10-29 |
+| [3](https://github.com/kgorzynski/megadev-s01e04/issues/3) | Digest JSON: GET /api/digest/:night | #1 | claude-code · opus-5.5 · low | 2026-10-29 |
+| [4](https://github.com/kgorzynski/megadev-s01e04/issues/4) | Board links each night to its digest | #1 | claude-code · opus-5.5 · low | 2026-10-29 |
+| [5](https://github.com/kgorzynski/megadev-s01e04/issues/5) | Route tests for digest page and JSON | #2, #3 | claude-code · opus-5.5 · low | 2026-10-29 |
+| [6](https://github.com/kgorzynski/megadev-s01e04/issues/6) | Preview for review | #2, #3, #4, #5 | claude-code · opus-5.5 · low | 2026-10-29 |
+| [7](https://github.com/kgorzynski/megadev-s01e04/issues/7) | Clean up preview and close the plan | #6 | claude-code · opus-5.5 · low | 2026-10-29 |
+
+The preview link lost its lane marker on 29 October, the day the plan closed (ADR 0003).
